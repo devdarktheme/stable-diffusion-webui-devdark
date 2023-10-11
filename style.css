@@ -366,6 +366,15 @@ div.svelte-1oo81b7>*:not(.absolute) {
   margin-bottom: 0.5rem;
 }
 
+#txt2img_tools>div, #img2img_tools>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#txt2img_accordions {
+  flex-direction: column;
+}
 
 /* all of the input range stuff is from this guy*/
 /* Shout out to them https://codepen.io/ShadowShahriar/pen/zYPPYrQ */
