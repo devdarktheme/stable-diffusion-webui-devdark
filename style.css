@@ -162,6 +162,14 @@ input[type='range']:focus::-ms-fill-upper {
   background: var(--ctp-overlay0);
 }
 
+/* input[type='range'] {
+  background: var(--ctp-surface1)!important;
+
+  background-image: linear-gradient(var(--ctp-accent),var(--ctp-accent))!important;
+  accent-color: var(--ctp-accent)!important;
+} */ 
+
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -187,11 +195,12 @@ input[type='number'] {
   background-color: var(--ctp-surface0);
 }
 
-input[type='range'] {
-  font-size: 1.5rem;
-}
+
+
+
 
 input[type='range'] {
+  font-size: 1.5rem;
   color: var(--accent);
   --thumb-height: 0.5em;
   --track-height: 0.125em;
@@ -361,6 +370,8 @@ input[type='range']:disabled::-moz-range-thumb {
   cursor: not-allowed;
 }
 
+
+
 div.svelte-1oo81b7>*:not(.absolute) {
   border-radius: 0.5rem!important;
   margin-bottom: 0.5rem;
@@ -374,6 +385,28 @@ div.svelte-1oo81b7>*:not(.absolute) {
 
 #txt2img_accordions {
   flex-direction: column;
+}
+
+div label:nth-of-type(n + 2):has(input[type="radio"]) {
+  margin-left: 6px;
+}
+
+#quicksettings div:has(> div > div > input[role="listbox"]) {
+  height: 34px;
+}
+
+
+#quicksettings label:has(input[type="radio"]) {
+  height: 34px;
+  padding-right: 11px;
+}
+
+#quicksettings button[title="Checkpoint: refresh"], #quicksettings button[title="VAE: refresh"]  {
+  height: 34px;
+}
+
+#quicksettings {
+  align-items: center !important;
 }
 
 /* all of the input range stuff is from this guy*/
