@@ -98,7 +98,7 @@
   --input-shadow-focus: 0 0 0 var(--shadow-spread) var(--neutral-700),
     var(--shadow-inset);
   --loader_color: None;
-  --slider_color: None;
+  --slider-color: var(--ctp-accent);
   --stat-background-fill: linear-gradient(
     to right,
     var(--primary-400),
@@ -201,7 +201,6 @@ input[type='number'] {
 
 input[type='range'] {
   font-size: 1.5rem;
-  color: var(--accent);
   --thumb-height: 0.5em;
   --track-height: 0.125em;
   --track-color: var(--ctp-surface0);
